@@ -1,0 +1,13 @@
+export   used to display all env variables
+
+free -m
+free -G
+free -T
+
+
+top
+
+top -u username
+
+df -h
+df -T  fileystems will be shown

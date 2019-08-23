@@ -1,0 +1,68 @@
+FROM   Used for specifying the base image from where we want to 
+       create customised docker images
+
+MAINTAINER Name of the author or the organization that has created the dockerfile
+
+CMD  This is used to specify the process or command that has to executed
+     when the container starts.
+
+ENTRYPOINT This is used to specify the default process that has to triggered
+           when a container starts
+
+RUN     Used for installing/deleting/upgrading s/w packages in the docker image
+
+COPY    Used to copy files from host to image
+
+ADD    This can also be used for copying files from host to container and it can
+       be used for downloading files from a remote server into the docker image
+
+USER   This is used to specify the the default user who should login into the container
+
+VOLUME  This is used for automatic mounting of volumes when a container starts
+
+EXPOSE This is used for opening a internal port on the container
+
+LABEL   This is used for assigning a label to the container
+
+WORKDIR  This is used for specifying the default working dir of the container
+
+ENV This is used for passing an environment varaible when the container starts
+
+STOPSIGNAL   This is used to specify the key stroke that will stop the container
+
+ARG this is used to pass arguments to the container at the time of starting it
+
+ONBUILD  
+
+
+https://docs.docker.com/engine/reference/builder/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

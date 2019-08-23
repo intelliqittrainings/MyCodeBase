@@ -1,0 +1,60 @@
+Master/Slave Setup
+=======================
+1 Create a new AWS Ubuntu 18 instance and name it slave
+2 Connect to the salve machine using git bash
+3 Set password for default "ubuntu" user
+  sudo passwd ubuntu
+4 Edit the sshd_config file for allowing ssh access
+  sudo vim /etc/ssh/sshd_config
+  Go into insert mode by pressing i
+  Search for "PasswordAuthentication"  and change it from no to yes
+  Save and quit    Esc :wq Enter
+5 Restart ssh
+  sudo service ssh restart
+6 Connect to master machine using git bash
+7 Generate the ssh keys
+  ssh-keygen
+  This will generate 2 keys called public and private keys in .ssh folder
+8 Copy the public keys into slave machine
+  ssh-copy-id ubuntu@private_ip_of_slave
+  This command will copy the content of public keys into a file called "authorised_keys"
+  on the remote server
+ 
+  Note: Once the above setup is done the master will be able to do ssh to slave without password
+  ssh ubuntu@private_ip_of_slave
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
