@@ -1,0 +1,85 @@
+1 Download and install jdk 1.8 or jdk 1.9
+2 Open c:--->Program files--->Jave--->Open jdk folder--->copy its path
+3 Right click on "This PC"--->click on Properties
+4 Click on Advanced System Setting--->Advanced--->environment variables
+5 Go to System variables--->new--->enter varaible name as JAVA_HOME
+  and paste the path of Jdk
+6 Hightlight the Path variable--->Click on Edit--->click on New
+7 Paste the path of Jdk\bin--->Ok
+8 Open https://maven.apache.org/download.cgi
+9 Go to Files section and Downlaod apache maven bin.zip version
+10 Extract it and Open it--->copy its path
+11 Click on Environment variables
+12 Click on New--->Enter variable name as M2_HOME
+   paste the path of Apache maven
+13 Hightlight the Path variable--->click on Edit--->New
+   Paste the path of Apache maven\bin
+14 Ok-->OK--->Ok
+
+
+To check if maven is configured or not
+1 Open cmd prompt
+  mvn --version
+
+
+Setup of maven on Ubuntu
+------------------------------
+1 Update the apt repository
+  sudo apt-get update
+2 Install java
+  sudo apt-get install -y openjdk-8-jdk
+3 Install maven
+  sudo apt-get install -y maven
+====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
